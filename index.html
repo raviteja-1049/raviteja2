@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diploma C23 Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="accessibility">
+                A+ A A- | Screen Reader | Skip to Main Content
+            </div>
+            <div class="logo">
+                <img src="C:\Users\DELL\Downloads\sbtet.jpg">
+                <h1>STATE BOARD OF TECHNICAL EDUCATION & TRAINING</h1>
+                <img src="C:\Users\DELL\Downloads\state.jpg">
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">Login</a>
+            </nav>
+        </div>
+        <div class="banner">
+            <h2>Diploma C23 Results</h2>
+            <p>Home / Diploma Results</p>
+        </div>
+    </header>
+    <main>
+        <section class="results-form">
+            <h3>Diploma Results</h3>
+            <form id="resultsForm">
+                <label for="pin">PIN*:</label>
+                <input type="text" id="pin" name="pin" required>
+                <label for="semester">Enter Semester*:</label>
+                <select id="semester" name="semester" required>
+                    <option value="">--Select Semester--</option>
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                </select>
+                <button type="submit">SUBMIT</button>
+            </form>
+            <div id="photoResult" style="display: none; text-align: center; margin-top: 20px;">
+                <img id="C:\Users\DELL\Downloads\haseeb.jpg" src="" alt="poyyiii chaduvu koo raa" style="max-width: 100%; height: auto;">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© Copy Rights Reserved with SBTET AP</p>
+        <p>Designed & Developed by <strong>APOnline</strong></p>
+    </footer>
+    <script>
+        document.getElementById('resultsForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Hide form and show photo
+            document.getElementById('resultsForm').style.display = 'none';
+            document.getElementById('photoResult').style.display = 'block';
+            // Set a sample photo (replace with your photo URL or path)
+            document.getElementById('resultPhoto').src = 'sample-photo.jpg'; // Change this to your photo path
+        });
+    </script>
+</body>
+</html>

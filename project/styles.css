@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003087;
+    color: white;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.accessibility {
+    font-size: 14px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin: 0 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav a {
+    color: #ff9900;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.banner {
+    background: url('background-image.jpg') no-repeat center;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.banner p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.results-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.results-form h3 {
+    text-align: center;
+}
+
+.results-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.results-form input, .results-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.results-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.results-form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #1a2a44;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
